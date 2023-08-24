@@ -90,6 +90,7 @@ public class SecurityConfig {
 				.clientAuthenticationMethod(
 						ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
 				.authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+				.authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
 				.build();
 
 		return new InMemoryRegisteredClientRepository(r1);
